@@ -1,0 +1,9 @@
+services:
+  playground:
+    build: ./
+    container_name: playground
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
